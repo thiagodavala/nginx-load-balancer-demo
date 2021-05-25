@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - "8000:80"
+
+  node1:
+    image: nginx:alpine
+    container_name: node1
+    ports:
+      - "80"
+
+  node2:
+    image: nginx:alpine
+    container_name: node2
+    ports:
+      - "80"
+
+
